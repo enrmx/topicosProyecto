@@ -28,13 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnViajes = new System.Windows.Forms.Button();
+            this.btnViajeros = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnViajes
+            // 
+            this.btnViajes.Location = new System.Drawing.Point(211, 194);
+            this.btnViajes.Name = "btnViajes";
+            this.btnViajes.Size = new System.Drawing.Size(353, 319);
+            this.btnViajes.TabIndex = 0;
+            this.btnViajes.Text = "Viajes";
+            this.btnViajes.UseVisualStyleBackColor = true;
+            // 
+            // btnViajeros
+            // 
+            this.btnViajeros.Location = new System.Drawing.Point(837, 194);
+            this.btnViajeros.Name = "btnViajeros";
+            this.btnViajeros.Size = new System.Drawing.Size(353, 319);
+            this.btnViajeros.TabIndex = 1;
+            this.btnViajeros.Text = "Viajeros";
+            this.btnViajeros.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1422, 746);
+            this.Controls.Add(this.btnViajeros);
+            this.Controls.Add(this.btnViajes);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnViajes;
+        private System.Windows.Forms.Button btnViajeros;
     }
 }
 
