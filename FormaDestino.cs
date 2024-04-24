@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace topicosProyecto
 {
-    public partial class Form2 : Form
+    public partial class FormaDestino : Form
     {
-        public Form2()
+        public FormaDestino()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

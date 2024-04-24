@@ -1,6 +1,6 @@
 ﻿namespace topicosProyecto
 {
-    partial class Form2
+    partial class FormViajes
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,8 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnOrigen = new System.Windows.Forms.Button();
+            this.btnDestino = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Viajes
@@ -55,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(317, 262);
+            this.label1.Location = new System.Drawing.Point(83, 266);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 1;
@@ -64,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(317, 373);
+            this.label2.Location = new System.Drawing.Point(83, 377);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 2;
@@ -73,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(327, 465);
+            this.label3.Location = new System.Drawing.Point(93, 469);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 25);
             this.label3.TabIndex = 3;
@@ -82,7 +84,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(327, 553);
+            this.label4.Location = new System.Drawing.Point(93, 557);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 25);
             this.label4.TabIndex = 4;
@@ -90,28 +92,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(569, 256);
+            this.textBox1.Location = new System.Drawing.Point(335, 260);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(644, 31);
             this.textBox1.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(569, 373);
+            this.textBox3.Location = new System.Drawing.Point(335, 377);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(644, 31);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(569, 469);
+            this.textBox4.Location = new System.Drawing.Point(335, 473);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(644, 31);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(569, 553);
+            this.textBox5.Location = new System.Drawing.Point(335, 557);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(644, 31);
             this.textBox5.TabIndex = 9;
@@ -143,11 +145,33 @@
             this.btnEliminar.Text = "eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // btnOrigen
+            // 
+            this.btnOrigen.Location = new System.Drawing.Point(1109, 292);
+            this.btnOrigen.Name = "btnOrigen";
+            this.btnOrigen.Size = new System.Drawing.Size(293, 93);
+            this.btnOrigen.TabIndex = 13;
+            this.btnOrigen.Text = "origen";
+            this.btnOrigen.UseVisualStyleBackColor = true;
+            this.btnOrigen.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnDestino
+            // 
+            this.btnDestino.Location = new System.Drawing.Point(1109, 442);
+            this.btnDestino.Name = "btnDestino";
+            this.btnDestino.Size = new System.Drawing.Size(293, 93);
+            this.btnDestino.TabIndex = 14;
+            this.btnDestino.Text = "destino";
+            this.btnDestino.UseVisualStyleBackColor = true;
+            this.btnDestino.Click += new System.EventHandler(this.btnDestino_Click);
+            // 
+            // FormViajes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 894);
+            this.Controls.Add(this.btnDestino);
+            this.Controls.Add(this.btnOrigen);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
@@ -160,7 +184,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Viajes);
-            this.Name = "Form2";
+            this.Name = "FormViajes";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -182,5 +206,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnOrigen;
+        private System.Windows.Forms.Button btnDestino;
     }
 }

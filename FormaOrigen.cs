@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace topicosProyecto
 {
-    public partial class Form1 : Form
+    public partial class FormaOrigen : Form
     {
-        public Form1()
+        public FormaOrigen()
         {
             InitializeComponent();
         }
