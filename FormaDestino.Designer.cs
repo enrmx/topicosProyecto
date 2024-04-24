@@ -37,6 +37,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtFecha
@@ -113,11 +114,21 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "destino";
             // 
-            // Destino
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(423, 526);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(274, 116);
+            this.btnAceptar.TabIndex = 29;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            // 
+            // FormaDestino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 718);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.txtNombreDestino);
             this.Controls.Add(this.idCodigo);
@@ -127,7 +138,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
-            this.Name = "Destino";
+            this.Name = "FormaDestino";
             this.Text = "Destino";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,5 +156,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }

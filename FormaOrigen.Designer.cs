@@ -39,6 +39,7 @@
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtNombreOrigen = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -131,11 +132,21 @@
             this.txtCodigo.Size = new System.Drawing.Size(366, 31);
             this.txtCodigo.TabIndex = 15;
             // 
-            // Origen
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(336, 554);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(274, 116);
+            this.btnAceptar.TabIndex = 30;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            // 
+            // FormaOrigen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 732);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtNombreOrigen);
             this.Controls.Add(this.txtFecha);
@@ -147,7 +158,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "Origen";
+            this.Name = "FormaOrigen";
             this.Text = "OrigenDestino";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -167,5 +178,6 @@
         private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtNombreOrigen;
         private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }
